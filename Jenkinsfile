@@ -47,11 +47,11 @@ pipeline{
         stage('Send Email'){
             echo 'Sending Email'
             steps{
-                emailtext(
+                mail to: "${EMAIL}"
                     subject: "NESTJS App Deployed Successfully on EC2"
                     body: "Your NESTJS App is Deployed and running! on http://54.209.202.194:${PORT}/"
-                    to: "${EMAIL}"
-                )
+                    
+            
             }
         }
     }
