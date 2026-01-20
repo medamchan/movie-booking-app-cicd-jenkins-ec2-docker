@@ -2,11 +2,11 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-COPY nestjs-app/package*.json ./
+COPY package*.json ./
 
 RUN npm install
 
-COPY nestjs-app/. . 
+COPY . ./
 
 RUN npm run build
 
