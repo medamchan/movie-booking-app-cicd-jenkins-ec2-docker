@@ -6,7 +6,7 @@ export class MoviesService {
   private movies: Movie[] = [
     {
       id: 1,
-      title: 'GabbarSingh',
+      title: 'Hello',
       genre: 'Sci-Fi',
       duration: 148,
       availableSeats: 50,
