@@ -44,7 +44,7 @@ pipeline {
             steps {
                 echo 'Sending Email'
                 emailext(
-                    subject: "NESTJS App Deployed Successfully on EC2",
+                    subject: "NESTJS App Deployed Successfully on EC2 using Jenkins",
                     body: "Your NESTJS App is Deployed and running!",
                     to: "${EMAIL}"
                 )
